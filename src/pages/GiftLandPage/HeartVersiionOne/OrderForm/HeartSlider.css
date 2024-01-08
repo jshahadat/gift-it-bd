@@ -1,0 +1,28 @@
+.overflow-x-hidden {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.slider-wrapper {
+  max-width: 100%; /* Ensure slider wrapper doesn't exceed its container */
+  margin: 0 auto; /* Center the slider horizontally if needed */
+}
+
+/* Responsive adjustments */
+.flex {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping items */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .flex {
+    /* Adjust the number of slides to show based on screen size */
+    /* For example, for smaller screens, show fewer slides */
+    flex-wrap: nowrap; /* Prevent wrapping items */
+    div {
+      flex: 0 0 50%; /* Show 2 slides on smaller screens */
+    }
+  }
+}
+
+/* Add more media queries as needed */
